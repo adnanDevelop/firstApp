@@ -1,8 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Link } from "expo-router";
+import { StyleSheet, Text, View } from "react-native";
 
-const index = () => {
+const About = () => {
   return (
     <View
       style={{
@@ -12,13 +11,12 @@ const index = () => {
       }}
     >
       <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
-        Welcome to the home page
+        Welcome to the About page
       </Text>
-      <Link href="/about">Go to the about page</Link>
     </View>
   );
 };
 
-export default index;
+export default About;
 
 const styles = StyleSheet.create({});
