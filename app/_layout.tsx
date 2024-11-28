@@ -1,11 +1,16 @@
 import React from "react";
 import { Stack } from "expo-router";
+import { StatusBar } from "react-native";
+import { Colors } from "@/constants/Colors";
 
 export default function RootLayout() {
   return (
-    <Stack>
-      {/* <Stack.Screen name="index" /> */}
-      {/* <Stack.Screen name="about" /> */}
-    </Stack>
+    <>
+      <StatusBar backgroundColor={Colors.background} barStyle="dark-content" />
+      <Stack>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        {/* <Stack.Screen name="about" /> */}
+      </Stack>
+    </>
   );
 }
