@@ -11,7 +11,7 @@ const About = () => {
       }}
     >
       <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
-        Welcome to the About page
+        Login Screen
       </Text>
     </View>
   );
